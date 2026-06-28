@@ -1,0 +1,100 @@
+:root { 
+    --primary-orange: #ff7300; 
+    --secondary-orange: #e06500;
+    --bg-gray: #d1d3d4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f6;
+}
+
+.hero-section { 
+    background-color: var(--bg-gray); 
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.text-orange {
+    color: var(--primary-orange) !important;
+}
+
+.btn-orange { 
+    background-color: var(--primary-orange); 
+    color: white; 
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-orange:hover { 
+    background-color: var(--secondary-orange); 
+    color: white; 
+    transform: translateY(-2px);
+}
+
+.btn-outline-orange {
+    border: 2px solid var(--primary-orange);
+    color: var(--primary-orange);
+    font-weight: 600;
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--primary-orange);
+    color: white;
+}
+
+/* Modifikasi shape orange agar presisi memanjang ke kanan sesuai gambar ke-2 */
+.orange-shape-bg {
+    background: var(--primary-orange); 
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 190px; 
+    width: 2000px; /* Memanjang penuh menembus batas kanan layar browser */
+    position: absolute; 
+    top: 22%; 
+    left: 15%;
+    z-index: 1;
+}
+
+.feature-card { 
+    border-radius: 20px; 
+    border: 2px solid #e3e3e3; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    background-color: #ffffff;
+}
+
+.feature-card:hover { 
+    border-color: var(--primary-orange); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.card-img-wrapper {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+}
+
+/* Penyesuaian section About Us sesuai warna abu-abu pekat di gambar ke-2 */
+.about-section {
+    background-color: #c9cbcc;
+}
+
+.badge-orange { 
+    background-color: rgba(255,115,0,0.1); 
+    color: var(--primary-orange); 
+    border: 2px solid var(--primary-orange); 
+    font-weight: 600;
+}
+
+.footer-section { 
+    background-color: #ffffff; 
+    padding: 60px 0; 
+    border-top: 2px solid #e3e3e3; 
+}
+
+.justify-text {
+    text-align: justify;
+}

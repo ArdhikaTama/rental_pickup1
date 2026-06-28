@@ -1,0 +1,16 @@
+# Mengabaikan file koneksi database lokal agar aman saat dideploy
+config/koneksi.php
+
+# Mengabaikan folder upload gambar dinamis agar tidak memenuhi memori GitHub
+assets/upload/mobil/*
+assets/upload/sim/*
+assets/upload/transfer/*
+
+# Mengizinkan folder tetap ada namun isinya kosong
+!assets/upload/mobil/.gitkeep
+!assets/upload/sim/.gitkeep
+!assets/upload/transfer/.gitkeep
+
+# File sampah sistem operasi
+.DS_Store
+Thumbs.db
